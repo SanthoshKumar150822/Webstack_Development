@@ -1,0 +1,44 @@
+header
+{
+    background-color:pink;
+    color:black;
+    Text-align:center;
+    font-size:50px;
+    padding:30px;
+    
+}
+nav
+{
+    background-color:skyblue;
+    color:black;
+    Text-align:center;
+    font-size:20px;
+    padding:15px;
+}
+footer
+{
+    background-color:black;
+    color:white;
+    Text-align:center;
+    font-size:30px;
+    padding:30px;
+    
+}
+footer span
+{
+    color:red;
+}
+p
+{
+    font-size:30px;
+    text-align:center;
+    margin:40px;
+    margin-left:20px;
+    margin-right:20px;
+    padding:20px;
+}
+p span
+{
+    color:red;
+}
+
