@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		 Get the current URL using JavaScript 
+	</title>
+</head>
+
+<body>
+	
+	<p>
+		<b>
+			Click on Below Button
+			To Get Current URL
+		</b>
+	</p>
+
+	<button onclick="GetURL()">
+		Get URL
+	</button>
+	<p id="url"></p>
+
+
+	<script>
+		function GetURL() {
+			var gfg = document.URL;
+			document.getElementById("url").innerHTML = gfg;
+		}
+	</script>
+</body>
+
+</html>
+
