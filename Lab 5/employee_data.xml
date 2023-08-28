@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Employee category ="Details">
+    <Employee1>
+        <Details>
+            <First_Name>"Santhosh"</First_Name>
+            <Last_Name>"Kumar"</Last_Name>
+            <Dob>2002-08-15</Dob>
+            <Gender>Male</Gender>
+            <Position>IOT Specialist</Position>
+            <Salary>70000000</Salary>
+            <Email>santhoshkumar150822@gmail.com</Email>
+            <Phone_Number>6379314514</Phone_Number>
+        </Details>
+    </Employee1>
+    <Employee2>
+        <Details>
+            <First_Name>"Sandhosini"</First_Name>
+            <Last_Name>"Santhosh"</Last_Name>
+            <Dob>2002-03-22</Dob>
+            <Gender>Female</Gender>
+            <Position>IOT Project Head</Position>
+            <Salary>50000000</Salary>
+            <Email>sandhosini220322@gmail.com</Email>
+            <Phone_Number>9842194400</Phone_Number>
+        </Details>
+    </Employee2>
+    <Employee3>
+        <Details>
+            <First_Name>"Santhosh"</First_Name>
+            <Last_Name>"Rossey"</Last_Name>
+            <Dob>2030-08-07</Dob>
+            <Gender>Female</Gender>
+            <Position>Junior Scientist</Position>
+            <Salary>30000000</Salary>
+            <Email>santhoshrossey070830@gmail.com</Email>
+            <Phone_Number>9659614306</Phone_Number>
+        </Details>
+    </Employee3>
+</Employee>        
