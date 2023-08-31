@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <style>
+
+            #first
+            {
+                margin-top: 135px;
+                margin-left:400px;
+                height:40px;
+                width:540px;
+                background-color: pink;
+
+            }
+            #form1
+            {
+                
+                
+                background-color: pink;
+                font-weight:bold;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            #Submit, #Reset
+            {
+                text-align: center;
+                font-weight:bold;
+                font-size:20px;
+            }
+            #Submit
+            {
+        
+                background-color: lightcoral;
+            }
+            #Reset
+            {
+                background-color:salmon;
+            }
+            #Submit:hover
+            {
+                background-color:black ;
+                color:lightcoral;
+                text-align: center;
+                font-weight:bold;
+                font-size:20px;
+            }
+            #Reset:hover
+            {
+                background-color:black;;
+                color:salmon;
+                text-align: center;
+                font-weight:bold;
+                font-size:20px;
+            }
+            Label
+            {
+                margin-left:40px;
+            }
+            input
+            {
+                font-size:15px;
+            }
+            #Lastname
+            {
+                margin-left:15px;
+            }
+            #mail
+            {
+                margin-left:78px;
+            }
+            #Password
+            {
+                margin-left:24px;
+            }
+            #ConfirmPassword
+            {
+                margin-left:37px;
+            }
+            #ConfirmPassword,#Password,#mail,#Lastname,#firstname,#DoB
+            {
+                font-weight: bold;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #DoB
+            {
+                margin-left:5px;
+            }
+            #Firstname
+            {
+                margin-left:10px;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="first">
+        <form id="form1" validate>
+            <br>
+            <br>
+            <label for="Firstname">First Name</label>
+            <input type="text" id="Firstname" name="Firstname" placeholder="Abdul" size="30" required>
+            <br><br>
+            <label for="Lastname">Last Name</label>
+            <input type="text" id="Lastname" name="Lastname" placeholder="Kalam" size="30" required>
+            <br><br>
+            <label for="Mail">Mail</label>
+            <input type="Mail" id="Mail" name="Mail" placeholder="Abdulkalam15101931@gmail.com" size="30" required>
+            <br><br>
+            <label for="Password">Password</label>
+            <input type="Password" name="Password" id="Password" size="30" required>
+            <br><br>
+            <label for="ConfirmPassword">Confirm</label>
+            <input type="Password" id="ConfirmPassword" name="ConfirmPassword" size="30" required>
+            <label for="ConfirmPassword">Password</label>
+            <br><br>
+            <label for="DoB">Date of Birth</label>
+            <input type="date" id="DoB" name="DoB" required>
+            <br>
+            <br>
+            <br>
+            <center>
+            <input type="Submit" id="Submit" name="Submit">&nbsp; &nbsp;
+            <input type="Reset" id="Reset" name="Reset">
+            </center>
+            <br>
+            <br>
+        </form>
+    </div>
+    <script type="text/javascript">
+        var a=document.getElementById("Firstname").value;
+        function u()
+        {
+            document.writeline(a);
+
+        }
+        
+    </script>
+
+    </body>
+</html>
