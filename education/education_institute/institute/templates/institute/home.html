@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Institute</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="container">
+        <h1>Education Institute</h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admission">Admissions</a></li>
+          <li><a href="/about">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Image Slider Section -->
+    <div class="slider">
+      <img
+        src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+        alt="Slider Image 1"
+      />
+      <img
+        src="https://images.news18.com/ibnlive/uploads/2020/06/1591879200_indian-institute-of-technology-madras.jpg"
+        alt="Slider Image 2"
+      />
+      <img
+        src="https://149346090.v2.pressablecdn.com/wp-content/uploads/2022/02/GettyImages-1237109120-768x432.jpg"
+        alt="Slider Image 3"
+      />
+    </div>
+
+    <!-- Institute Info Section -->
+    <section class="institute-info">
+      <div class="container">
+        <h2>Welcome to Our Institute</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
+          mauris vel quam laoreet tristique.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+  </body>
+</html>

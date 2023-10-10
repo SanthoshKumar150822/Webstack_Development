@@ -1,0 +1,84 @@
+/* Reset some default styles */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the About Us Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Style the Courses Offered Section */
+.courses-offered h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.courses-offered ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.courses-offered li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style the Achievements Section */
+.achievements h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.achievements p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.achievements ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.achievements li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
