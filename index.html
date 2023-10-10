@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Blog App</h1>
+      <h2>Add a Blog</h2>
+      <form id="blogForm">
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" name="title" /><br />
+        <label for="content">Content:</label><br />
+        <textarea id="content" name="content"></textarea><br />
+        <button type="submit">Add Blog</button>
+      </form>
+
+      <h2>All Blogs</h2>
+      <ul id="blogs"></ul>
+    </div>
+
+    <script>
+      async function addBlog(event) {
+        event.preventDefault();
+        const title = document.getElementById("title").value;
+        const content = document.getElementById("content").value;
+
+        const response = await fetch("http://localhost:3000/blogs", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ title, content }),
+        });
+
+        const newBlog = await response.json();
+        displayBlogs();
+      }
+
+      async function displayBlogs() {
+        const response = await fetch("http://localhost:3000/blogs");
+        const blogs = await response.json();
+
+        const blogList = document.getElementById("blogs");
+        blogList.innerHTML = "";
+
+        blogs.forEach((blog) => {
+          const li = document.createElement("li");
+          li.textContent = `${blog.title}: ${blog.content} `;
+
+          const updateButton = document.createElement("button");
+          updateButton.textContent = "Update";
+          updateButton.onclick = () => updateBlog(blog.id);
+
+          const deleteButton = document.createElement("button");
+          deleteButton.textContent = "Delete";
+          deleteButton.onclick = () => deleteBlog(blog.id);
+
+          li.appendChild(updateButton);
+          li.appendChild(deleteButton);
+
+          blogList.appendChild(li);
+        });
+      }
+
+      async function updateBlog(id) {
+        const title = prompt("Enter new title:");
+        const content = prompt("Enter new content:");
+
+        const response = await fetch(`http://localhost:3000/blogs/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ title, content }),
+        });
+
+        displayBlogs();
+      }
+
+      async function deleteBlog(id) {
+        const response = await fetch(`http://localhost:3000/blogs/${id}`, {
+          method: "DELETE",
+        });
+
+        displayBlogs();
+      }
+
+      document.getElementById("blogForm").addEventListener("submit", addBlog);
+      displayBlogs();
+    </script>
+  </body>
+</html>
